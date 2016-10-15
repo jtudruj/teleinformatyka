@@ -1,0 +1,1661 @@
+Model {
+  Name			  "am_3"
+  Version		  4.00
+  Description		  "Model lacza cyfrowego z modulacja ASK/FSK/PSK"
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  on
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	on
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  on
+  Created		  "Fri Sep 20 12:28:33 2002"
+  Creator		  "Tomas"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Oct 24 18:27:57 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:709>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0"
+  StopTime		  "1"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "10000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aExtMode=0 -aFoldNonRol"
+"ledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1 -aIgnoreCustomStor"
+"ageClasses=1 -aIncHierarchyInIds=0 -aInlineInvariantSignals=0 -aLocalBlockOut"
+"puts=1 -aLogVarNameModifier=\"rt_\" -aRTWVerbose=1 -aRollThreshold=5 -aShowEl"
+"iminatedStatements=1"
+  RTWInlineParameters	  on
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "am_3"
+    Location		    [206, 74, 1018, 724]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "portrait"
+    PaperPositionMode	    "auto"
+    PaperType		    "a4letter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "93"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "1\nZrodlo\nsygnalu"
+      Ports		      [0, 1]
+      Position		      [15, 435, 80, 475]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "èrÛd≥o sygna≥u"
+      MaskDescription	      "Generuje sygna≥ testowy. \nMoc wyjúciowa -6 dB."
+"\n"
+      MaskHelp		      "No help"
+      MaskPromptString	      "W≥πczenie ürÛd≥a sygna≥u|Przebieg losowy|czÍsto"
+"tliwoúÊ/pasmo"
+      MaskStyleString	      "checkbox,checkbox,popup(100|200|300)"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "on=@1;sq=@2;bity=@3;"
+      MaskInitialization      "if (sq == 0) sq = 1;\nelse sq = 0;\nend;\nif (o"
+"n == 0)\nset_param(gcb,'MaskEnables',{,'on','off','off'}); fgen=100; G=1;\nel"
+"se\n  set_param(gcb,'MaskEnables',{,'on','on','on'});\n  if (bity == 1) fgen "
+"= 100; G=1/0.1791;\n  elseif (bity == 2) fgen = 200; G=1/0.2467;\n  else fgen"
+" = 300; G=1/0.3022;\n  end;\nend;\n"
+      MaskDisplay	      "disp('Sygnal\\nnadawany')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on|off|300"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"1\nZrodlo\nsygnalu"
+	Location		[202, 74, 1002, 724]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [285, 400, 315, 430]
+	  ShowName		  off
+	  Value			  "1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [285, 330, 315, 360]
+	  ShowName		  off
+	  Value			  "on"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  Position		  [275, 160, 305, 190]
+	  ShowName		  off
+	  Value			  "sq"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Filtr2"
+	  Ports			  [1, 1]
+	  Position		  [265, 212, 315, 258]
+	  SourceBlock		  "dsparch3/Analog\nFilter Design"
+	  SourceType		  "Analog Filter Design"
+	  method		  "Chebyshev II"
+	  filttype		  "Lowpass"
+	  N			  "16"
+	  Wlo			  "2*pi*fgen"
+	  Whi			  "2*pi*(fn+B/2)"
+	  Rp			  "2"
+	  Rs			  "60"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [335, 220, 365, 250]
+	  Gain			  "G"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  Position		  [615, 330, 645, 360]
+	  Gain			  "1/sqrt(2)"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Gaussian Noise\nGenerator"
+	  Ports			  [0, 1]
+	  Position		  [135, 213, 215, 257]
+	  SourceBlock		  "commsource2/Gaussian Noise\nGenerator"
+	  SourceType		  "Gaussian Noise Generator"
+	  m			  "0"
+	  d			  "1"
+	  s			  "12345 "
+	  Ts			  "1/(6000)"
+	  frameBased		  "off"
+	  sampPerFrame		  "1"
+	  orient		  "off"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "Sine Wave"
+	  Position		  [140, 80, 170, 110]
+	  SineType		  "Time-based"
+	  Amplitude		  "sqrt(2)"
+	  Bias			  "0"
+	  Frequency		  "2*pi*fgen"
+	  Phase			  "0"
+	  Samples		  "10"
+	  Offset		  "0"
+	  SampleTime		  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [520, 330, 550, 360]
+	  Threshold		  "0.5"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  Position		  [415, 160, 445, 190]
+	  Threshold		  "0.5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "U out"
+	  Position		  [725, 338, 755, 352]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 160]
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sine Wave"
+	  SrcPort		  1
+	  Points		  [205, 0; 0, 70]
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, -60]
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Gaussian Noise\nGenerator"
+	  SrcPort		  1
+	  DstBlock		  "Filtr2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Filtr2"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -50]
+	  DstBlock		  "Switch1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  DstBlock		  "U out"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "2\nModulator"
+      Ports		      [1, 1]
+      Position		      [140, 430, 225, 480]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Modulator AM"
+      MaskDescription	      "Dokonuje operacji modulacji AM sygna≥em podanym"
+" na wejúcie. \nCzÍstotlioúÊ noúnej: 1000 Hz.  "
+      MaskHelp		      "No help"
+      MaskPromptString	      "W≥πczenie modulatora|G≥ÍbokoúÊ modulacji (0..1)"
+":"
+      MaskStyleString	      "checkbox,popup(0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|"
+"0.9|1.0|1.5)"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,off"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "on=@1;p=@2;"
+      MaskInitialization      "fnos=1000;\nif (on==0) k=1; set_param(gcb,'Mask"
+"Enables',{,'on','off'});\nelse set_param(gcb,'MaskEnables',{,'on','on'});\n  "
+"if (p == 1) k = 0.1;\n  elseif (p == 2) k = 0.2;\n  elseif (p == 3) k = 0.3;"
+"\n  elseif (p == 4) k = 0.4;\n  elseif (p == 5) k = 0.5;\n  elseif (p == 6) k"
+" = 0.6;\n  elseif (p == 7) k = 0.7;\n  elseif (p == 8) k = 0.8;\n  elseif (p "
+"== 9) k = 0.9;\n  elseif (p == 10) k = 1.0;\n  else k = 1.5;\n  end;\nend;\no"
+"n=on+1;"
+      MaskDisplay	      "disp('Modulator\\nAM')\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "off|0.7"
+      MaskVariableAliases     ","
+      System {
+	Name			"2\nModulator"
+	Location		[206, 74, 1018, 724]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "U in"
+	  Position		  [35, 228, 65, 242]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [160, 150, 190, 180]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [160, 85, 190, 115]
+	  Value			  "on"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn"
+	  Position		  [100, 220, 160, 250]
+	  Expr			  "1+k*u"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [205, 226, 250, 259]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope2"
+	  Ports			  [5]
+	  Position		  [455, 302, 505, 378]
+	  BackgroundColor	  "lightBlue"
+	  ShowName		  off
+	  Floating		  off
+	  Location		  [114, 82, 689, 716]
+	  Open			  on
+	  NumInputPorts		  "5"
+	  TickLabels		  "OneTimeTick"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "Sygna≥ wejúciowy"
+	    axes2		    "Sygna≥ po modulatorze"
+	    axes3		    "Sygna≥ po przejúciu przez tor telekomunik"
+"acyjny"
+	    axes4		    "Sygna≥ za filtrem pasmowym"
+	    axes5		    "sygna≥ wyjúciowy"
+	  }
+	  List {
+	    ListType		    SelectedSignals
+	    axes1		    ""
+	    axes2		    ""
+	    axes3		    ""
+	    axes4		    ""
+	    axes5		    ""
+	  }
+	  Grid			  "on"
+	  TimeRange		  "0.4"
+	  YMin			  "-1~-2.5~-2.5~0~-5"
+	  YMax			  "1~2.5~2.5~1.75~5"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData1"
+	  DataFormat		  "Array"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "10000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "Sine Wave"
+	  Position		  [100, 295, 130, 325]
+	  SineType		  "Time-based"
+	  Amplitude		  "1"
+	  Bias			  "0"
+	  Frequency		  "2*pi*1000"
+	  Phase			  "0"
+	  Samples		  "10"
+	  Offset		  "0"
+	  SampleTime		  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  MultiPortSwitch
+	  Name			  "Wlaczenie \nmodulacji"
+	  Ports			  [3, 1]
+	  Position		  [315, 142, 345, 188]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "U out"
+	  Position		  [515, 158, 545, 172]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Wlaczenie \nmodulacji"
+	  SrcPort		  1
+	  DstBlock		  "U out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [85, 0; 0, 50]
+	  DstBlock		  "Wlaczenie \nmodulacji"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Wlaczenie \nmodulacji"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    Points		    [5, 0; 0, -65]
+	    DstBlock		    "Wlaczenie \nmodulacji"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, 95]
+	    DstBlock		    "Scope2"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "U in"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Fcn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "Scope2"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Product"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Scope2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sine Wave"
+	  SrcPort		  1
+	  Points		  [55, 0]
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "3\nLacze\ntelekomunikacyjne\n"
+      Ports		      [1, 1]
+      Position		      [295, 435, 415, 475]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      FontName		      "Arial"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "£πcze telekomunikacyjne"
+      MaskDescription	      "Filtruje i t≥umi sygna≥ wejúciowy wed≥ug zadany"
+"ch parametrÛw.\nNa sygna≥ nak≥adany jest teø szum bia≥y wg rozk≥adu Gaussa. "
+      MaskPromptString	      "Dodanie szumu bia≥ego|Moc szumu [dB]:"
+      MaskStyleString	      "checkbox,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "wn=@1;sz=@2;"
+      MaskInitialization      "sz=10^(sz/10);\nif (wn == 0)\nset_param(gcb,'Ma"
+"skEnables',{,'on','off'});\nelse\nset_param(gcb,'MaskEnables',{,'on','on'});"
+"\nend;\n"
+      MaskDisplay	      "disp('Lacze \\ntelekomunikacyjne')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on|3"
+      MaskVariableAliases     ","
+      System {
+	Name			"3\nLacze\ntelekomunikacyjne\n"
+	Location		[202, 74, 1014, 725]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"rotated"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "P in"
+	  Position		  [45, 228, 75, 242]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [45, 24, 85, 56]
+	  ShowName		  off
+	  Value			  "wn"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [55, 85, 85, 115]
+	  ShowName		  off
+	  Value			  "1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Filtr2"
+	  Ports			  [1, 1]
+	  Position		  [175, 337, 225, 383]
+	  SourceBlock		  "dsparch3/Analog\nFilter Design"
+	  SourceType		  "Analog Filter Design"
+	  method		  "Butterworth"
+	  filttype		  "Lowpass"
+	  N			  "2"
+	  Wlo			  "2*pi*1000"
+	  Whi			  "2*pi*(fn+B/2)"
+	  Rp			  "2"
+	  Rs			  "40"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Gaussian Noise\nGenerator"
+	  Ports			  [0, 1]
+	  Position		  [45, 338, 125, 382]
+	  SourceBlock		  "commsource2/Gaussian Noise\nGenerator"
+	  SourceType		  "Gaussian Noise Generator"
+	  m			  "0"
+	  d			  "sz/0.7333"
+	  s			  "12345 "
+	  Ts			  "1/(6000)"
+	  frameBased		  "off"
+	  sampPerFrame		  "1"
+	  orient		  "off"
+	}
+	Block {
+	  BlockType		  MultiPortSwitch
+	  Name			  "Multiport\nSwitch"
+	  Ports			  [3, 1]
+	  Position		  [400, 212, 430, 258]
+	  ShowName		  off
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [135, 60, 155, 80]
+	  ShowName		  off
+	  IconShape		  "rectangular"
+	  Inputs		  "++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [305, 290, 325, 310]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "P out"
+	  Position		  [585, 228, 615, 242]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "P in"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Multiport\nSwitch"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 25]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -25]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, 150]
+	  DstBlock		  "Multiport\nSwitch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Multiport\nSwitch"
+	  SrcPort		  1
+	  DstBlock		  "P out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, -50]
+	  DstBlock		  "Multiport\nSwitch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Gaussian Noise\nGenerator"
+	  SrcPort		  1
+	  DstBlock		  "Filtr2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Filtr2"
+	  SrcPort		  1
+	  Points		  [85, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "5\nDemodulator"
+      Ports		      [1, 2]
+      Position		      [500, 433, 570, 477]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Demodulator AM"
+      MaskDescription	      "Dokonuje operacji demodulacji AM sygna≥u podane"
+"go na wejúcie. \nCzÍstotliwoúÊ noúnej: 1000 Hz. "
+      MaskHelp		      "No help."
+      MaskPromptString	      "WybÛr typu demodulatora|w≥πcz filtr pasmowy|pas"
+"mo filtru (Hz)"
+      MaskStyleString	      "popup(detektor obwiedni|detektor synchroniczny)"
+",checkbox,popup(50|75|100|150|200|250|300|350|400|500|600)"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,off"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "typ=@1;on=@2;p=@3;"
+      MaskInitialization      "fn=1000;\nif (on==0) B=400; set_param(gcb,'Mask"
+"Enables',{,'on','on','off'});\nelse set_param(gcb,'MaskEnables',{,'on','on','"
+"on'});\n  if (p == 1) B = 50;\n  elseif (p == 2) B = 75;\n  elseif (p == 3) B"
+" = 100;\n  elseif (p == 4) B = 150;\n  elseif (p == 5) B = 200;\n  elseif (p "
+"== 6) B = 250;\n  elseif (p == 7) B = 300;\n  elseif (p == 8) B = 350;\n  els"
+"eif (p == 9) B = 400;\n  elseif (p == 10) B = 500;\n  else B = 600;\n  end;\n"
+"B=16/15*B;\nend;"
+      MaskDisplay	      "disp('Demodulator\\nAM')\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "detektor obwiedni|off|200"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"5\nDemodulator"
+	Location		[206, 74, 1018, 724]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "U in"
+	  Position		  [50, 183, 80, 197]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  Position		  [320, 85, 350, 115]
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [435, 104, 480, 136]
+	  Value			  "typ"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Filtr pasmowy fo=1000Hz"
+	  Ports			  [1, 1]
+	  Position		  [120, 164, 220, 216]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Filtr pasmowy fo=1000Hz"
+	    Location		    [2, 74, 1014, 724]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "we"
+	      Position		      [80, 58, 110, 72]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [80, 155, 110, 185]
+	      ShowName		      off
+	      Value		      "on"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Filtr2"
+	      Ports		      [1, 1]
+	      Position		      [210, 42, 260, 88]
+	      SourceBlock	      "dsparch3/Analog\nFilter Design"
+	      SourceType	      "Analog Filter Design"
+	      method		      "Chebyshev II"
+	      filttype		      "Bandpass"
+	      N			      "20"
+	      Wlo		      "2*pi*(fn-B/2)"
+	      Whi		      "2*pi*(fn+B/2)"
+	      Rp		      "2"
+	      Rs		      "60"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch3"
+	      Position		      [300, 155, 330, 185]
+	      Threshold		      "0.5"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "wy"
+	      Position		      [405, 163, 435, 177]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "we"
+	      SrcPort		      1
+	      Points		      [70, 0]
+	      Branch {
+		DstBlock		"Filtr2"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 115]
+		DstBlock		"Switch3"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Switch3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Filtr2"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      DstBlock		      "Switch3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Switch3"
+	      SrcPort		      1
+	      DstBlock		      "wy"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Filtr1"
+	  Ports			  [1, 1]
+	  Position		  [620, 172, 670, 218]
+	  SourceBlock		  "dsparch3/Analog\nFilter Design"
+	  SourceType		  "Analog Filter Design"
+	  method		  "Chebyshev II"
+	  filttype		  "Lowpass"
+	  N			  "16"
+	  Wlo			  "2*pi*(fn-B/2)"
+	  Whi			  "2*pi*(fn+B/2)"
+	  Rp			  "2"
+	  Rs			  "60"
+	}
+	Block {
+	  BlockType		  MultiPortSwitch
+	  Name			  "Multiport\nSwitch"
+	  Ports			  [3, 1]
+	  Position		  [540, 172, 570, 218]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [315, 276, 360, 309]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Receiver carrier 1000Hz"
+	  Ports			  [0, 1]
+	  Position		  [120, 274, 220, 326]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Receiver carrier 1000Hz"
+	    Location		    [2, 74, 1014, 724]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [80, 155, 110, 185]
+	      ShowName		      off
+	      Value		      "on"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Filtr2"
+	      Ports		      [1, 1]
+	      Position		      [210, 42, 260, 88]
+	      SourceBlock	      "dsparch3/Analog\nFilter Design"
+	      SourceType	      "Analog Filter Design"
+	      method		      "Chebyshev II"
+	      filttype		      "Bandpass"
+	      N			      "20"
+	      Wlo		      "2*pi*(fn-B/2)"
+	      Whi		      "2*pi*(fn+B/2)"
+	      Rp		      "2"
+	      Rs		      "60"
+	    }
+	    Block {
+	      BlockType		      Sin
+	      Name		      "Sine Wave"
+	      Position		      [80, 50, 110, 80]
+	      SineType		      "Time-based"
+	      Amplitude		      "1"
+	      Bias		      "0"
+	      Frequency		      "2*pi*fn"
+	      Phase		      "0"
+	      Samples		      "10"
+	      Offset		      "0"
+	      SampleTime	      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch3"
+	      Position		      [300, 155, 330, 185]
+	      Threshold		      "0.5"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "wy"
+	      Position		      [405, 163, 435, 177]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Sine Wave"
+	      SrcPort		      1
+	      Points		      [70, 0]
+	      Branch {
+		DstBlock		"Filtr2"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 115]
+		DstBlock		"Switch3"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Switch3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Filtr2"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      DstBlock		      "Switch3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Switch3"
+	      SrcPort		      1
+	      DstBlock		      "wy"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "wcz"
+	  Position		  [745, 63, 775, 77]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "mcz"
+	  Position		  [745, 188, 775, 202]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Multiport\nSwitch"
+	  SrcPort		  1
+	  DstBlock		  "Filtr1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 95]
+	  DstBlock		  "Multiport\nSwitch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 60]
+	  DstBlock		  "Multiport\nSwitch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Receiver carrier 1000Hz"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, -85]
+	  DstBlock		  "Multiport\nSwitch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Filtr pasmowy fo=1000Hz"
+	  SrcPort		  1
+	  Points		  [0, 0; 35, 0]
+	  Branch {
+	    Points		    [0, 95]
+	    DstBlock		    "Product"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -90]
+	    Branch {
+	      DstBlock		      "Abs"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -30]
+	      DstBlock		      "wcz"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "U in"
+	  SrcPort		  1
+	  DstBlock		  "Filtr pasmowy fo=1000Hz"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Filtr1"
+	  SrcPort		  1
+	  DstBlock		  "mcz"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "7\nOdbiorca\nsygnalu"
+      Ports		      [1]
+      Position		      [775, 445, 835, 485]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Odbiorca sygna≥u"
+      MaskDescription	      "Odbiera sygna≥ przesylany od nadawcy."
+      MaskHelp		      "No help"
+      MaskDisplay	      "disp('Sygnal\\nodbierany')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"7\nOdbiorca\nsygnalu"
+	Location		[295, 327, 828, 917]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "U in"
+	  Position		  [55, 18, 85, 32]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Odbiorca"
+	  Position		  [135, 15, 155, 35]
+	}
+	Line {
+	  SrcBlock		  "U in"
+	  SrcPort		  1
+	  DstBlock		  "Odbiorca"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      Ports		      [1]
+      Position		      [775, 303, 865, 327]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display4"
+      Ports		      [1]
+      Position		      [775, 373, 865, 397]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      Ports		      [5]
+      Position		      [775, 162, 825, 238]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      Floating		      off
+      Location		      [114, 82, 689, 716]
+      Open		      on
+      NumInputPorts	      "5"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"Sygna≥ wejúciowy"
+	axes2			"Sygna≥ po modulatorze"
+	axes3			"Sygna≥ po przejúciu przez tor telekomunikacyj"
+"ny"
+	axes4			"Sygna≥ za filtrem pasmowym"
+	axes5			"sygna≥ wyjúciowy"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+	axes3			""
+	axes4			""
+	axes5			""
+      }
+      Grid		      "on"
+      TimeRange		      "1"
+      YMin		      "-1~-2.5~-2.5~0~-5"
+      YMax		      "1~2.5~2.5~1.75~5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "10000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "moc sygnalu\nzdemodulowanego"
+      Ports		      [1, 1]
+      Position		      [675, 368, 735, 402]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Power dB"
+      MaskDescription	      "Oblicza w dB wartoúÊ mocy mierzonego sygna≥u"
+      MaskPromptString	      "w≥πcz"
+      MaskStyleString	      "checkbox"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "on=@1;"
+      MaskDisplay	      "\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on"
+      System {
+	Name			"moc sygnalu\nzdemodulowanego"
+	Location		[218, 74, 1018, 724]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IN"
+	  Position		  [215, 148, 245, 162]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RMS"
+	  Ports			  [1, 1]
+	  Position		  [425, 137, 500, 173]
+	  SourceBlock		  "dspstat3/RMS"
+	  SourceType		  "RMS"
+	  run			  "on"
+	  reset_popup		  "None"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  Position		  [320, 135, 355, 175]
+	  X0			  "0"
+	  SampleTime		  "1/2048"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "dB Conversion1"
+	  Ports			  [1, 1]
+	  Position		  [585, 133, 665, 177]
+	  SourceBlock		  "dspmathops/dB Conversion"
+	  SourceType		  "dB Conversion"
+	  dBtype		  "dB"
+	  intype		  "Amplitude"
+	  R			  "1"
+	  fuzz			  "on"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "P dB"
+	  Position		  [745, 148, 775, 162]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "dB Conversion1"
+	  SrcPort		  1
+	  DstBlock		  "P dB"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RMS"
+	  SrcPort		  1
+	  DstBlock		  "dB Conversion1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IN"
+	  SrcPort		  1
+	  DstBlock		  "Unit Delay"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  DstBlock		  "RMS"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "moc sygnalu przed demodulacja"
+      Ports		      [1, 1]
+      Position		      [675, 298, 735, 332]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Power dB"
+      MaskDescription	      "Oblicza w dB wartoúÊ mocy mierzonego sygna≥u"
+      MaskPromptString	      "w≥πcz"
+      MaskStyleString	      "checkbox"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "on=@1;"
+      MaskDisplay	      "\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on"
+      System {
+	Name			"moc sygnalu przed demodulacja"
+	Location		[218, 74, 1018, 724]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IN"
+	  Position		  [215, 148, 245, 162]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RMS"
+	  Ports			  [1, 1]
+	  Position		  [425, 137, 500, 173]
+	  SourceBlock		  "dspstat3/RMS"
+	  SourceType		  "RMS"
+	  run			  "on"
+	  reset_popup		  "None"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  Position		  [320, 135, 355, 175]
+	  X0			  "0"
+	  SampleTime		  "1/4096"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "dB Conversion1"
+	  Ports			  [1, 1]
+	  Position		  [585, 133, 665, 177]
+	  SourceBlock		  "dspmathops/dB Conversion"
+	  SourceType		  "dB Conversion"
+	  dBtype		  "dB"
+	  intype		  "Amplitude"
+	  R			  "1"
+	  fuzz			  "on"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "P dB"
+	  Position		  [745, 148, 775, 162]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "dB Conversion1"
+	  SrcPort		  1
+	  DstBlock		  "P dB"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RMS"
+	  SrcPort		  1
+	  DstBlock		  "dB Conversion1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IN"
+	  SrcPort		  1
+	  DstBlock		  "Unit Delay"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  DstBlock		  "RMS"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "1\nZrodlo\nsygnalu"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"2\nModulator"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -285]
+	DstBlock		"Scope2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "5\nDemodulator"
+      SrcPort		      2
+      Points		      [55, 0]
+      Branch {
+	Points			[0, -80]
+	Branch {
+	  DstBlock		  "moc sygnalu\nzdemodulowanego"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -155]
+	  DstBlock		  "Scope2"
+	  DstPort		  5
+	}
+      }
+      Branch {
+	DstBlock		"7\nOdbiorca\nsygnalu"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "2\nModulator"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	DstBlock		"3\nLacze\ntelekomunikacyjne\n"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -270]
+	DstBlock		"Scope2"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "3\nLacze\ntelekomunikacyjne\n"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"5\nDemodulator"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -255]
+	DstBlock		"Scope2"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "moc sygnalu\nzdemodulowanego"
+      SrcPort		      1
+      DstBlock		      "Display4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "5\nDemodulator"
+      SrcPort		      1
+      Points		      [25, 0; 0, -130]
+      Branch {
+	Points			[0, -100]
+	DstBlock		"Scope2"
+	DstPort			4
+      }
+      Branch {
+	DstBlock		"moc sygnalu przed demodulacja"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "moc sygnalu przed demodulacja"
+      SrcPort		      1
+      DstBlock		      "Display1"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [419, 46]
+      Text		      "Model lacza analogowego z modulacja AM"
+      DropShadow	      on
+      FontName		      "Arial"
+      FontSize		      16
+      FontWeight	      "bold"
+    }
+  }
+}

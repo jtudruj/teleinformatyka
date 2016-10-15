@@ -1,0 +1,2578 @@
+Model {
+  Name			  "lacze2"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  on
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	on
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  on
+  Created		  "Fri Sep 20 12:28:33 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Oct 06 12:58:47 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:262>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0"
+  StopTime		  "1"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "10000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aExtMode=0 -aFoldNonRol"
+"ledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1 -aIgnoreCustomStor"
+"ageClasses=1 -aIncHierarchyInIds=0 -aInlineInvariantSignals=0 -aLocalBlockOut"
+"puts=1 -aLogVarNameModifier=\"rt_\" -aRTWVerbose=1 -aRollThreshold=5 -aShowEl"
+"iminatedStatements=1"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "lacze2"
+    Location		    [40, 148, 1052, 818]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    181
+    ScreenColor		    "automatic"
+    PaperOrientation	    "portrait"
+    PaperPositionMode	    "auto"
+    PaperType		    "a4letter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "1\nZrodlo\nsygnalu"
+      Ports		      [0, 1]
+      Position		      [15, 299, 75, 341]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "èrÛd≥o sygna≥u"
+      MaskDescription	      "Generuje sinusoidalny sygna≥ o okreúlonej ampli"
+"tudzie i czÍstotliowoúci. WartoúÊ amplitudy wyraøona jest w V i nie powinna p"
+"rzekraczaÊ 10 V.\nW przypadku podania wiÍkszej wartoúci, zostanie ona ogranic"
+"zona\ndo 10 V.\n\nCzÍstotliwoúÊ sygna≥u wyraøona jest w MHz i dla poprawnoúci"
+" dokonywanej modulacji powinna stanowiÊ ok. 1/10 czÍstotliwoúci noúnej ktÛra "
+"moøe wynosiÊ 200, 400, 600 lub 800 MHz."
+      MaskHelp		      "No help"
+      MaskPromptString	      "Amplituda sygna≥u [V]:|CzÍstotliwoúÊ sygna≥u [M"
+"Hz]:"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "Asyg=@1;fsyg=@2;"
+      MaskDisplay	      "disp('Sygnal\\nnadawany')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1|2"
+      MaskVariableAliases     ","
+      System {
+	Name			"1\nZrodlo\nsygnalu"
+	Location		[570, 124, 1103, 714]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	212
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Sin
+	  Name			  "Generator"
+	  Position		  [35, 15, 65, 45]
+	  SineType		  "Time-based"
+	  Amplitude		  "Asyg"
+	  Bias			  "0"
+	  Frequency		  "2*pi*fsyg"
+	  Phase			  "0"
+	  Samples		  "10"
+	  Offset		  "0"
+	  SampleTime		  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Ogranicznik"
+	  Position		  [110, 15, 140, 45]
+	  UpperLimit		  "10"
+	  LowerLimit		  "-10"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "U out"
+	  Position		  [180, 23, 210, 37]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Generator"
+	  SrcPort		  1
+	  DstBlock		  "Ogranicznik"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ogranicznik"
+	  SrcPort		  1
+	  DstBlock		  "U out"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "2\nModulator"
+      Ports		      [1, 1]
+      Position		      [115, 294, 185, 346]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Modulator AM/FM/PM"
+      MaskDescription	      "Dokonuje operacji modulacji (w zaleønoúci od wy"
+"boru AM/FM/PM) sygna≥em podanym na wejúcie. WartoúÊ amplitudy noúnej jest sta"
+"≥a i wynosi Ac = 1 V.\n\nCzÍstotliwoúÊ noúnej naleøy dobraÊ majπc na uwadze c"
+"zÍstotliwoúÊ sygna≥u przesylanego.\n\nNaleøy okreúliÊ czu≥oúÊ modulatora.\nW "
+"przypadku modulacji AM - ka [1/V]. G≥ÍbokoúÊ modulacji m zaleøy od amplitudy "
+"sygna≥u wejúciowego Uin oraz od czu≥oúci i wynosi:\n\nm = ka * Uin * 100%\n\n"
+"Dla modulacji FM i PM sπ okreúlane odpowiednio: czu≥oúÊ czÍstotliwoúciowa - k"
+"f [MHz/V] i czu≥oúÊ fazowa - kp [rad/V]. "
+      MaskHelp		      "No help"
+      MaskPromptString	      "Rodzaj modulacji:|CzÍstotliwoúÊ noúnej [MHz]:|C"
+"zu≥oúÊ modulacji AM [1/V], FM [MHz/V], PM [rad/V]:"
+      MaskStyleString	      "popup(AM|FM|PM),popup(100|200|400|800),edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "modulacja=@1;nosna=@2;czulosc=@3;"
+      MaskInitialization      "if (nosna == 1)\nfnos = 100;\nikona2 = ['      "
+" ';'       ';'       ';'100 MHz'];\nelseif (nosna == 2)\nfnos = 200;\nikona2 "
+"= ['       ';'       ';'       ';'200 MHz'];\nelseif (nosna == 3)\nfnos = 400"
+";\nikona2 = ['       ';'       ';'       ';'400 MHz'];\nelse\nfnos = 800;\nik"
+"ona2 = ['       ';'       ';'       ';'800 MHz'];\nend;\n\nif (modulacja == 1"
+")\nikona1 = ['  ';'AM'];\nelseif (modulacja == 2)\nikona1 = ['  ';'FM'];\nels"
+"e\nikona1 = ['  ';'PM'];\nend;\n"
+      MaskDisplay	      "disp('Modulator\\n\\n')\ndisp(ikona1)\ndisp(iko"
+"na2)"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "AM|200|1"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"2\nModulator"
+	Location		[470, 106, 1263, 696]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "U in"
+	  Position		  [35, 158, 65, 172]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Czulosc"
+	  Position		  [110, 74, 160, 116]
+	  Gain			  "czulosc"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Modulator AM"
+	  Ports			  [1, 1]
+	  Position		  [180, 72, 255, 118]
+	  SourceBlock		  "commanapbnd2/DSB AM\nModulator\nPassband"
+	  SourceType		  "DSB AM Modulator Passband"
+	  Offset		  "1"
+	  Fc			  "fnos"
+	  Ph			  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Modulator FM"
+	  Ports			  [1, 1]
+	  Position		  [180, 143, 255, 187]
+	  SourceBlock		  "commanapbnd2/FM\nModulator\nPassband"
+	  SourceType		  "FM Modulator Passband"
+	  Fc			  "fnos"
+	  Ph			  "0"
+	  HzPerV		  "czulosc"
+	  ts			  "0.1/fnos"
+	  td			  "Inf"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Modulator PM"
+	  Ports			  [1, 1]
+	  Position		  [180, 212, 255, 258]
+	  SourceBlock		  "commanapbnd2/PM\nModulator\nPassband"
+	  SourceType		  "PM Modulator Passband"
+	  Fc			  "fnos"
+	  Ph			  "0"
+	  Kc			  "czulosc"
+	  td			  "Inf"
+	}
+	Block {
+	  BlockType		  MultiPortSwitch
+	  Name			  "Przelacznik\nwyboru\nmodulacji"
+	  Ports			  [4, 1]
+	  Position		  [310, 137, 340, 183]
+	  Inputs		  "3"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Wybor modulacji"
+	  Position		  [185, 16, 250, 44]
+	  Value			  "modulacja"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "U out"
+	  Position		  [365, 153, 395, 167]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Modulator AM"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 60]
+	  DstBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Modulator FM"
+	  SrcPort		  1
+	  DstBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Modulator PM"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -60]
+	  DstBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Wybor modulacji"
+	  SrcPort		  1
+	  Points		  [40, 0]
+	  DstBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  SrcPort		  1
+	  DstBlock		  "U out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "U in"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    DstBlock		    "Modulator FM"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "Modulator PM"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -70]
+	    DstBlock		    "Czulosc"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Czulosc"
+	  SrcPort		  1
+	  DstBlock		  "Modulator AM"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "3\nSterownik\nLED/LD"
+      Ports		      [1, 1]
+      Position		      [225, 300, 285, 340]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      FontName		      "Arial"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Sterownik diody LED/Lasera"
+      MaskDescription	      "Ma za zadanie wysterowanie diody LED lub lasera"
+" sygna≥em prπdowym. Wejúcie sterownika jest napiÍciowe. Naleøy podaÊ czu≥oúÊ "
+"prπdowπ sterownika oraz prπd polaryzacji wstÍpnej uwzglÍdniajπc parametry nad"
+"ajnika optycznego.\n\nWartoúÊ ograniczenia prπdu maksymalnego diody naleøy wp"
+"rowadziÊ\nw celu zabezpieczenia diody LED lub lasera przed uszkodzeniem.\nW p"
+"rzypadku gdy sygna≥ przekroczy wartoúÊ dopuszczalnπ, zadzia≥a ogranicznik prπ"
+"du."
+      MaskHelp		      "No help"
+      MaskPromptString	      "Czu≥oúÊ prπdowa sterownika [mA/V]:|Prπd polaryz"
+"acji wstÍpnej [mA]:|Ograniczenie prπdu maksymalnego diody LED/LD [mA]:"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "K1=@1;Ipol=@2;Iogr=@3;"
+      MaskDisplay	      "disp('Sterownik\\ndiody')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "10|80|100"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"3\nSterownik\nLED/LD"
+	Location		[-922, 314, -83, 992]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "U in"
+	  Position		  [35, 28, 65, 42]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Ogranicznik"
+	  Position		  [265, 20, 295, 50]
+	  UpperLimit		  "Iogr"
+	  LowerLimit		  "0"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Prad polaryzacji wstepnej"
+	  Position		  [100, 89, 150, 111]
+	  Value			  "Ipol"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Przetwornik U/I"
+	  Position		  [100, 14, 150, 56]
+	  Gain			  "K1"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [195, 25, 215, 45]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "I out"
+	  Position		  [335, 28, 365, 42]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Przetwornik U/I"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Prad polaryzacji wstepnej"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Ogranicznik"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "U in"
+	  SrcPort		  1
+	  DstBlock		  "Przetwornik U/I"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ogranicznik"
+	  SrcPort		  1
+	  DstBlock		  "I out"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "4\nDioda\nLED/LD"
+      Ports		      [1, 1]
+      Position		      [325, 300, 385, 340]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      FontName		      "Arial"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Dioda LED/Laser"
+      MaskDescription	      "Przetwarza prπd wejúciowy na moc optycznπ. Blok"
+" obejmuje nadajnik optyczny zintegrowany ze sprzÍgaczem wejúciowym. Do wyboru"
+" sπ\ndwie diody LED oraz dwa lasery. Parametry ürÛde≥ úwiat≥a podane sπ\nw ta"
+"beli:\n                         Imax            Pmax         Iprog     \n|---"
+"----------------|------------------|------------------|-----------------|\n| "
+"   LED-1     |     80 mA   |   0.1 mW   |     0 mA    |\n|    LED-2     |   1"
+"40 mA   |   0.5 mW   |     0 mA    |\n|    Laser-1   |   120 mA   |   1.0 mW "
+"  |    40 mA   |\n|    Laser-2   |   100 mA   |   2.0 mW   |    60 mA   |\n--"
+"--------------------------------------------------------------------------\nW"
+" przypadku przekroczenia prπdu maksymalnego diody lub lasera element ulega us"
+"zkodzeniu i przestaje generowaÊ sygna≥ optyczny."
+      MaskHelp		      "No help"
+      MaskPromptString	      "Typ zastosowanej diody"
+      MaskStyleString	      "popup(LED-1|LED-2|Laser-1|Laser-2)"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "dioda=@1;"
+      MaskInitialization      "Baza_Imax = [80 140 120 100];\nBaza_Pmax = [0.1"
+" 0.5 1 2];\nBaza_Iprog = [0 0 40 60];\nK2 = Baza_Pmax(dioda) / (Baza_Imax(dio"
+"da) - Baza_Iprog(dioda));\nImax = Baza_Imax(dioda);\nIprog = Baza_Iprog(dioda"
+");\n\nif (dioda == 1)\nikona = ['LED-1'];\nelseif (dioda == 2)\nikona = ['LED"
+"-2'];\nelseif (dioda == 3)\nikona = ['Laser-1'];\nelse\nikona = ['Laser-2'];"
+"\nend;"
+      MaskDisplay	      "disp(ikona)"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Laser-2"
+      System {
+	Name			"4\nDioda\nLED/LD"
+	Location		[315, 90, 1108, 454]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "I in"
+	  Position		  [45, 28, 75, 42]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Ogranicznik"
+	  Position		  [255, 20, 285, 50]
+	  UpperLimit		  "inf"
+	  LowerLimit		  "0"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Prad maksymalny"
+	  Position		  [35, 149, 85, 171]
+	  Value			  "Imax"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Prad progowy"
+	  Position		  [130, 69, 180, 91]
+	  Value			  "Iprog"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product4"
+	  Ports			  [2, 1]
+	  Position		  [415, 23, 450, 67]
+	  ShowName		  off
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Przetwornik I/P"
+	  Position		  [320, 14, 370, 56]
+	  Gain			  "K2"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [200, 25, 220, 45]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Tester"
+	  Position		  [140, 137, 170, 168]
+	  Operator		  "<="
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Wylacznik diody"
+	  Ports			  [1, 1, 0, 1]
+	  Position		  [240, 205, 300, 235]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  on
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Wylacznik diody"
+	    Location		    [286, 538, 751, 845]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "automatic"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In"
+	      Position		      [35, 58, 65, 72]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      TriggerPort
+	      Name		      "Trigger"
+	      Ports		      []
+	      Position		      [85, 15, 105, 35]
+	      TriggerType	      "falling"
+	      ShowOutputPort	      off
+	      OutputDataType	      "auto"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out"
+	      Position		      [125, 58, 155, 72]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "1"
+	    }
+	    Line {
+	      SrcBlock		      "In"
+	      SrcPort		      1
+	      DstBlock		      "Out"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Zero"
+	  Position		  [140, 205, 170, 235]
+	  ShowName		  off
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "P out"
+	  Position		  [495, 38, 525, 52]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Prad progowy"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Ogranicznik"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ogranicznik"
+	  SrcPort		  1
+	  DstBlock		  "Przetwornik I/P"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "I in"
+	  SrcPort		  1
+	  Points		  [0, 0; 25, 0]
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 110]
+	    DstBlock		    "Tester"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Przetwornik I/P"
+	  SrcPort		  1
+	  DstBlock		  "Product4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product4"
+	  SrcPort		  1
+	  DstBlock		  "P out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Tester"
+	  SrcPort		  1
+	  Points		  [95, 0]
+	  DstBlock		  "Wylacznik diody"
+	  DstPort		  trigger
+	}
+	Line {
+	  SrcBlock		  "Wylacznik diody"
+	  SrcPort		  1
+	  Points		  [90, 0; 0, -165]
+	  DstBlock		  "Product4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Zero"
+	  SrcPort		  1
+	  DstBlock		  "Wylacznik diody"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Prad maksymalny"
+	  SrcPort		  1
+	  DstBlock		  "Tester"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "5\nTor\nswiatlowodowy"
+      Ports		      [1, 1]
+      Position		      [425, 300, 505, 340]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      FontName		      "Arial"
+      ShowPortLabels	      on
+      Permissions	      "ReadOnly"
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Tor úwiat≥owodowy"
+      MaskDescription	      "T≥umi sygna≥ wejúciowy o wartoúÊ okreúlonπ prze"
+"z parametry. WartoúÊ t≥umienia ca≥kowitego wynosi:\n\nA(dB) = (-1) * (Af * lf"
+" + Ls * n + Lm * m)"
+      MaskPromptString	      "D≥ugoúÊ úwiat≥owodu - lf [km]:|T≥umienie jednos"
+"tkowe - Af [dB/km]:|IloúÊ po≥πczeÒ spawanych - n:|T≥umienie po≥πczenia spawan"
+"ego - Ls [dB]:|IloúÊ po≥πczeÒ roz≥πcznych - m:|T≥umienie po≥πczenia roz≥πczne"
+"go - Lm [dB]:"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on,on,on"
+      MaskCallbackString      "|||||"
+      MaskEnableString	      "on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on"
+      MaskVariables	      "lf=@1;Af=@2;n=@3;Ls=@4;m=@5;Lm=@6;"
+      MaskDisplay	      "disp('Tor\\nswiatlowodowy')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "36|0.5|5|0.2|2|0.5"
+      MaskVariableAliases     ",,,,,"
+      System {
+	Name			"5\nTor\nswiatlowodowy"
+	Location		[-935, 313, -96, 991]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"rotated"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "P in"
+	  Position		  [335, 38, 365, 52]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Dlugosc swiatlowodu"
+	  Position		  [35, 14, 85, 36]
+	  Value			  "lf"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  Position		  [255, 105, 310, 145]
+	  ShowName		  off
+	  Gain			  "- 0.1"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain2"
+	  Position		  [470, 35, 525, 75]
+	  ShowName		  off
+	  Gain			  "1000"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Ilosc spawow"
+	  Position		  [35, 94, 85, 116]
+	  Value			  "n"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Ilosc zlaczy"
+	  Position		  [35, 174, 85, 196]
+	  Value			  "m"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "Math\nFunction2"
+	  Ports			  [1, 1]
+	  Position		  [335, 110, 365, 140]
+	  ShowName		  off
+	  Operator		  "10^u"
+	  OutputSignalType	  "auto"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product3"
+	  Ports			  [2, 1]
+	  Position		  [135, 23, 170, 67]
+	  ShowName		  off
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product4"
+	  Ports			  [2, 1]
+	  Position		  [410, 33, 445, 77]
+	  ShowName		  off
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product5"
+	  Ports			  [2, 1]
+	  Position		  [135, 183, 170, 227]
+	  ShowName		  off
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product6"
+	  Ports			  [2, 1]
+	  Position		  [135, 103, 170, 147]
+	  ShowName		  off
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [3, 1]
+	  Position		  [200, 110, 230, 140]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "+|+|+"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Tlumienie jednostkowe"
+	  Position		  [35, 55, 85, 75]
+	  Value			  "Af"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Tlumienie spawu"
+	  Position		  [35, 135, 85, 155]
+	  Value			  "Ls"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Tlumienie zlacza"
+	  Position		  [35, 215, 85, 235]
+	  Value			  "Lm"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "P out"
+	  Position		  [550, 48, 580, 62]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Math\nFunction2"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -60]
+	  DstBlock		  "Product4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product4"
+	  SrcPort		  1
+	  DstBlock		  "Gain2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Dlugosc swiatlowodu"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 10]
+	  DstBlock		  "Product3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Tlumienie jednostkowe"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -10]
+	  DstBlock		  "Product3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  DstBlock		  "Math\nFunction2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product3"
+	  SrcPort		  1
+	  Points		  [40, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "P in"
+	  SrcPort		  1
+	  DstBlock		  "Product4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ilosc zlaczy"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 10]
+	  DstBlock		  "Product5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Tlumienie zlacza"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -10]
+	  DstBlock		  "Product5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Ilosc spawow"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 10]
+	  DstBlock		  "Product6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Tlumienie spawu"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -10]
+	  DstBlock		  "Product6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product6"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product5"
+	  SrcPort		  1
+	  Points		  [40, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Gain2"
+	  SrcPort		  1
+	  DstBlock		  "P out"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "6\nOdbiornik\noptyczny"
+      Ports		      [1, 1]
+      Position		      [545, 301, 605, 339]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      FontName		      "Arial"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Odbiornik optyczny"
+      MaskDescription	      "Obejmuje sprzÍgacz optyczny zintegrowany z dete"
+"ktorem optycznym\ni wzmacniaczem transimpedancyjnym. Przetwarza moc optycznπ "
+"na sygna≥ napiÍciowy oraz eliminuje sk≥adowa sta≥π zawartπ w sygnale optyczny"
+"m (sygna≥ ze sk≥adowπ sta≥π nie daje siÍ prawid≥owo demodulowaÊ). Naleøy poda"
+"Ê czu≥oúÊ odbiornika.\n\nZaznaczenie funkcji \"Pomiar wartoúci szumu\" powodu"
+"je od≥πczenie mocy optycznej od wejúcia i umoøliwia pomiar wartoúci szumu gen"
+"erowanego przez odbiornik. Aby obliczyÊ moc szumu naleøy uwzglÍdniÊ czu≥oúÊ o"
+"dbiornika."
+      MaskHelp		      "No Help"
+      MaskPromptString	      "Czu≥oúÊ odbiornika [V/uW]:|Pomiar wartoúci szum"
+"u"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "K3=@1;szum=@2;"
+      MaskInitialization      "szum = szum + 1;\nUnas = 5;"
+      MaskDisplay	      "disp('Odbiornik\\noptyczny')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "0.2|off"
+      MaskVariableAliases     ","
+      System {
+	Name			"6\nOdbiornik\noptyczny"
+	Location		[-773, 262, 66, 940]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "P in"
+	  Position		  [45, 88, 75, 102]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Filtr skl. stalej"
+	  Ports			  [1, 1]
+	  Position		  [425, 72, 475, 118]
+	  SourceBlock		  "dsparch3/Analog\nFilter Design"
+	  SourceType		  "Analog Filter Design"
+	  method		  "Butterworth"
+	  filttype		  "Highpass"
+	  N			  "1"
+	  Wlo			  "2*pi*50"
+	  Whi			  "80"
+	  Rp			  "2"
+	  Rs			  "40"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Generator szumu"
+	  Ports			  [0, 1]
+	  Position		  [110, 167, 200, 213]
+	  ShowName		  off
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Generator szumu"
+	  MaskPromptString	  "Moc szumu [uW]:"
+	  MaskStyleString	  "edit"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskVariables		  "Pszum=@1;"
+	  MaskDisplay		  "plot(0,0,100,100,[95 5 10 10 10 (100-15)*[0"
+":1/30:1]+10],[75 75 75 70 95 randn(1,31)*10+75]);\ndisp('\\nGenerator szumu')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0.1"
+	  System {
+	    Name		    "Generator szumu"
+	    Location		    [386, 78, 1454, 742]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "automatic"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Generator szumu"
+	      Ports		      [0, 1]
+	      Position		      [25, 30, 105, 70]
+	      SourceBlock	      "commsource2/Gaussian Noise\nGenerator"
+	      SourceType	      "Gaussian Noise Generator"
+	      m			      "0"
+	      d			      "0.5"
+	      s			      "54321"
+	      Ts		      "0.0001"
+	      frameBased	      off
+	      sampPerFrame	      "1"
+	      orient		      off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Przetwornik P/U1"
+	      Position		      [130, 30, 180, 70]
+	      NamePlacement	      "alternate"
+	      ShowName		      off
+	      Gain		      "1.39*Pszum"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out"
+	      Position		      [205, 43, 235, 57]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Generator szumu"
+	      SrcPort		      1
+	      DstBlock		      "Przetwornik P/U1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Przetwornik P/U1"
+	      SrcPort		      1
+	      DstBlock		      "Out"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Ogranicznik"
+	  Position		  [350, 80, 380, 110]
+	  UpperLimit		  "Unas"
+	  LowerLimit		  "-Unas"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  MultiPortSwitch
+	  Name			  "Przelacznik\npomiaru szumu"
+	  Ports			  [3, 1]
+	  Position		  [145, 72, 175, 118]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Przetwornik P/U"
+	  Position		  [265, 74, 315, 116]
+	  Gain			  "K3"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [210, 85, 230, 105]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Wylacznik\nsygnalu"
+	  Position		  [35, 16, 85, 44]
+	  Value			  "szum"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Zero"
+	  Position		  [45, 125, 75, 155]
+	  ShowName		  off
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "U out"
+	  Position		  [505, 88, 535, 102]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Przetwornik P/U"
+	  SrcPort		  1
+	  DstBlock		  "Ogranicznik"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Przetwornik P/U"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Generator szumu"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Ogranicznik"
+	  SrcPort		  1
+	  DstBlock		  "Filtr skl. stalej"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Wylacznik\nsygnalu"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 50]
+	  DstBlock		  "Przelacznik\npomiaru szumu"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "P in"
+	  SrcPort		  1
+	  DstBlock		  "Przelacznik\npomiaru szumu"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Przelacznik\npomiaru szumu"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -30]
+	  DstBlock		  "Przelacznik\npomiaru szumu"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Filtr skl. stalej"
+	  SrcPort		  1
+	  DstBlock		  "U out"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "7\nDemodulator"
+      Ports		      [1, 1]
+      Position		      [645, 294, 715, 346]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Demodulator AM/FM/PM"
+      MaskDescription	      "Dokonuje operacji demodulacji (w zaleønoúci od "
+"wyboru AM/FM/PM) sygna≥u podanego na wejúcie. WartoúÊ amplitudy noúnej jest s"
+"ta≥a i wynosi Ac = 1 V. Daltego w przypadku demodulacji AM naleøy pamiÍtaÊ o "
+"odpowiednim ustawieniu czu≥oúci odbiornika optycznego, tak aby úrednia amplit"
+"uda noúnej wynosi≥a ok. 1 V.\n\nWartoúci czÍstotliwoúci noúnej i czu≥oúci mod"
+"ulacji naleøy podaÊ takie same jak w modulatorze. W przeciwnym wypadku fala z"
+"demodulowana bÍdzie zniekszta≥cona.\n\nZaznaczenie funkcji \"Dodatkowy filtr "
+"noúnej\" powoduje za≥πczenie filtru dolnoprzepustowego eliminujπcego pozosta≥"
+"oúci noúnej.\n\nFunkcja \"Pomiar wartoúci szumu\" powinna byÊ zaznaczona przy"
+" pomiarze szumu."
+      MaskHelp		      "No help."
+      MaskPromptString	      "Rodzaj modulacji:|CzÍstotliwoúÊ noúnej [MHz]:|C"
+"zu≥oúÊ modulacji AM [1/V], FM [MHz/V], PM [rad/V]:|Dodatkowy filtr noúnej    "
+"|Pomiar wartoúci szumu"
+      MaskStyleString	      "popup(AM|FM|PM),popup(100|200|400|800),edit,che"
+"ckbox,checkbox"
+      MaskTunableValueString  "on,on,on,on,on"
+      MaskCallbackString      "||||"
+      MaskEnableString	      "on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on"
+      MaskVariables	      "modulacja=@1;nosna=@2;czulosc=@3;filtr=@4;szum="
+"@5;"
+      MaskInitialization      "filtr = filtr + 1;\n\nif (nosna == 1)\nfnos = 1"
+"00;\nikona2 = ['       ';'       ';'       ';'100 MHz'];\nelseif (nosna == 2)"
+"\nfnos = 200;\nikona2 = ['       ';'       ';'       ';'200 MHz'];\nelseif (n"
+"osna == 3)\nfnos = 400;\nikona2 = ['       ';'       ';'       ';'400 MHz'];"
+"\nelse\nfnos = 800;\nikona2 = ['       ';'       ';'       ';'800 MHz'];\nend"
+";\n\nif (modulacja == 1)\nikona1 = ['  ';'AM'];\nelseif (modulacja == 2)\niko"
+"na1 = ['  ';'FM'];\nelse\nikona1 = ['  ';'PM'];\nend;\n"
+      MaskDisplay	      "disp('Demodulator\\n\\n')\ndisp(ikona1)\ndisp(i"
+"kona2)"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "AM|200|1|off|off"
+      MaskVariableAliases     ",,,,"
+      System {
+	Name			"7\nDemodulator"
+	Location		[304, 203, 1112, 881]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "U in"
+	  Position		  [35, 193, 65, 207]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Czulosc"
+	  Position		  [215, 109, 265, 151]
+	  Gain			  "1/czulosc"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Demodulator AM"
+	  Ports			  [1, 1]
+	  Position		  [115, 107, 190, 153]
+	  SourceBlock		  "commanapbnd2/DSB AM\nDemodulator\nPassband"
+	  SourceType		  "DSB AM Demodulator Passband"
+	  Offset		  "1"
+	  Fc			  "fnos"
+	  Ph			  "0"
+	  num			  "[0.0201 0.0402 0.0201]"
+	  den			  "[1.0000 -1.5610 0.6414]"
+	  ts			  "0.1/fnos"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Demodulator FM"
+	  Ports			  [1, 1]
+	  Position		  [115, 177, 190, 223]
+	  SourceBlock		  "commanapbnd2/FM\nDemodulator\nPassband"
+	  SourceType		  "FM Demodulator Passband"
+	  Fc			  "fnos"
+	  Ph			  "0"
+	  HzPerVolt		  "czulosc"
+	  num			  "[0.0201 0.0402 0.0201]"
+	  den			  "[1.0000 -1.5610 0.6414]"
+	  ts			  "0.1/fnos"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Demodulator PM"
+	  Ports			  [1, 1]
+	  Position		  [115, 247, 190, 293]
+	  SourceBlock		  "commanapbnd2/PM\nDemodulator\nPassband"
+	  SourceType		  "PM Demodulator Passband"
+	  Fc			  "fnos"
+	  Ph			  "0"
+	  Kc			  "czulosc"
+	  num			  "[0.0201 0.0402 0.0201]"
+	  den			  "[1.0000 -1.5610 0.6414]"
+	  HzPerVolt		  "1"
+	  ts			  "0.1/fnos"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Filtr"
+	  Ports			  [1, 1]
+	  Position		  [435, 247, 485, 293]
+	  SourceBlock		  "dsparch3/Analog\nFilter Design"
+	  SourceType		  "Analog Filter Design"
+	  method		  "Butterworth"
+	  filttype		  "Lowpass"
+	  N			  "2"
+	  Wlo			  "2*pi*0.5*fnos"
+	  Whi			  "80"
+	  Rp			  "2"
+	  Rs			  "40"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Pomiar szumu"
+	  Position		  [215, 59, 265, 81]
+	  Value			  "szum"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  MultiPortSwitch
+	  Name			  "Przelacznik\ndodatkowego\nfiltru"
+	  Ports			  [3, 1]
+	  Position		  [535, 172, 565, 218]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  MultiPortSwitch
+	  Name			  "Przelacznik\nwyboru\nmodulacji"
+	  Ports			  [4, 1]
+	  Position		  [350, 172, 380, 218]
+	  Inputs		  "3"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [290, 120, 310, 140]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "++|"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Wlacznik\nfiltru"
+	  Position		  [435, 116, 485, 144]
+	  Value			  "filtr"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Wybor modulacji"
+	  Position		  [120, 16, 185, 44]
+	  Value			  "modulacja"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "U out"
+	  Position		  [590, 188, 620, 202]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Demodulator AM"
+	  SrcPort		  1
+	  DstBlock		  "Czulosc"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demodulator FM"
+	  SrcPort		  1
+	  DstBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Demodulator PM"
+	  SrcPort		  1
+	  Points		  [125, 0; 0, -60]
+	  DstBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Wybor modulacji"
+	  SrcPort		  1
+	  Points		  [145, 0]
+	  DstBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "U in"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    DstBlock		    "Demodulator FM"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -70]
+	    DstBlock		    "Demodulator AM"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "Demodulator PM"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Przelacznik\ndodatkowego\nfiltru"
+	  SrcPort		  1
+	  DstBlock		  "U out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  SrcPort		  1
+	  Points		  [0, 0; 25, 0]
+	  Branch {
+	    DstBlock		    "Przelacznik\ndodatkowego\nfiltru"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Filtr"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Filtr"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -60]
+	  DstBlock		  "Przelacznik\ndodatkowego\nfiltru"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Wlacznik\nfiltru"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 50]
+	  DstBlock		  "Przelacznik\ndodatkowego\nfiltru"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 60]
+	  DstBlock		  "Przelacznik\nwyboru\nmodulacji"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Pomiar szumu"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Czulosc"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "8\nOdbiorca\nsygnalu"
+      Ports		      [1]
+      Position		      [755, 300, 815, 340]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Odbiorca sygna≥u"
+      MaskDescription	      "Odbiera sygna≥ przesylany od nadawcy."
+      MaskHelp		      "No help"
+      MaskDisplay	      "disp('Sygnal\\nodbierany')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"8\nOdbiorca\nsygnalu"
+	Location		[295, 327, 828, 917]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "U in"
+	  Position		  [55, 18, 85, 32]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Odbiorca"
+	  Position		  [135, 15, 155, 35]
+	}
+	Line {
+	  SrcBlock		  "U in"
+	  SrcPort		  1
+	  DstBlock		  "Odbiorca"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [2, 1]
+      Position		      [121, 250, 179, 255]
+      Orientation	      "up"
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RMS1"
+      Ports		      [1, 1]
+      Position		      [65, 400, 125, 440]
+      Orientation	      "down"
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      ShowPortLabels	      on
+      Permissions	      "ReadOnly"
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Pomiar RMS"
+      MaskDescription	      "Oblicza wartoúÊ skutecznπ sygna≥u po zakoÒczeni"
+"u symulacji."
+      MaskDisplay	      "disp('RMS')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"RMS1"
+	Location		[233, 305, 1026, 895]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In"
+	  Position		  [35, 28, 65, 42]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RMS"
+	  Ports			  [1, 1]
+	  Position		  [160, 15, 240, 55]
+	  SourceBlock		  "dspstat3/RMS"
+	  SourceType		  "RMS"
+	  run			  on
+	  reset_popup		  "None"
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [90, 15, 130, 55]
+	  SampleTime		  "0.0001"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out"
+	  Position		  [265, 28, 295, 42]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "RMS"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RMS"
+	  SrcPort		  1
+	  DstBlock		  "Out"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RMS2"
+      Ports		      [1, 1]
+      Position		      [595, 400, 655, 440]
+      Orientation	      "down"
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Pomiar RMS"
+      MaskDescription	      "Oblicza wartoúÊ skutecznπ sygna≥u po zakoÒczeni"
+"u symulacji."
+      MaskDisplay	      "disp('RMS')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"RMS2"
+	Location		[233, 305, 1026, 895]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In"
+	  Position		  [35, 28, 65, 42]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RMS"
+	  Ports			  [1, 1]
+	  Position		  [160, 15, 240, 55]
+	  SourceBlock		  "dspstat3/RMS"
+	  SourceType		  "RMS"
+	  run			  on
+	  reset_popup		  "None"
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [90, 15, 130, 55]
+	  SampleTime		  "0.0001"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out"
+	  Position		  [265, 28, 295, 42]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "RMS"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RMS"
+	  SrcPort		  1
+	  DstBlock		  "Out"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RMS3"
+      Ports		      [1, 1]
+      Position		      [705, 400, 765, 440]
+      Orientation	      "down"
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Pomiar RMS"
+      MaskDescription	      "Oblicza wartoúÊ skutecznπ sygna≥u po zakoÒczeni"
+"u symulacji."
+      MaskDisplay	      "disp('RMS')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"RMS3"
+	Location		[233, 305, 1026, 895]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In"
+	  Position		  [35, 28, 65, 42]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RMS"
+	  Ports			  [1, 1]
+	  Position		  [160, 15, 240, 55]
+	  SourceBlock		  "dspstat3/RMS"
+	  SourceType		  "RMS"
+	  run			  on
+	  reset_popup		  "None"
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [90, 15, 130, 55]
+	  SampleTime		  "0.0001"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out"
+	  Position		  [265, 28, 295, 42]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "RMS"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RMS"
+	  SrcPort		  1
+	  DstBlock		  "Out"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      Ports		      [3]
+      Position		      [765, 231, 805, 269]
+      Floating		      off
+      Location		      [77, 53, 642, 775]
+      Open		      on
+      NumInputPorts	      "3"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"Sygnal nadany i odebrany [V]"
+	axes2			"Sygnal po modulacji [V]"
+	axes3			"Sygnal przed demodulacja [V]"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+	axes3			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-2.5~-2.5~-2.5"
+      YMax		      "2.5~2.5~2.5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "10000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      Ports		      [3]
+      Position		      [765, 166, 805, 204]
+      Floating		      off
+      Location		      [212, 62, 787, 784]
+      Open		      on
+      NumInputPorts	      "3"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"Wysterowanie diody [mA]"
+	axes2			"Moc na wejsciu swiatlowodu [mW]"
+	axes3			"Moc na wyjsciu swiatlowodu [uW]"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+	axes3			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5~-0.25~-2.5"
+      YMax		      "125~2.25~22.5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "10000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Tlumienie"
+      Ports		      [2, 1]
+      Position		      [425, 400, 505, 440]
+      Orientation	      "down"
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      FontName		      "Arial"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Przetwornik do pomiaru t≥umienia"
+      MaskDescription	      "Podajπc na wejúcia przetwornika sygna≥y z wejúc"
+"ia i wyjúcia úwiat≥owodu uzyskuje siÍ wartoúÊ t≥umienia ca≥kowitego toru úwia"
+"t≥owodowego wyraøonπ, w zaleønoúci od wyboru, w dB lub uW/uW."
+      MaskPromptString	      "Pomiar t≥umienia:"
+      MaskStyleString	      "popup(dB|uW/uW)"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "tlumienie=@1;"
+      MaskInitialization      "if (tlumienie == 1)\nikona = ['  ';'  ';'dB'];"
+"\nelse\nikona = ['     ';'     ';'uW/uW'];\nend;"
+      MaskDisplay	      "disp('Tlumienie\\n')\ndisp(ikona)"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "dB"
+      System {
+	Name			"Tlumienie"
+	Location		[313, 163, 1106, 753]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "P in"
+	  Position		  [45, 63, 75, 77]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "P out"
+	  Position		  [45, 143, 75, 157]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [400, 92, 440, 128]
+	  ShowName		  off
+	  Gain			  "10"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  Position		  [110, 52, 160, 88]
+	  ShowName		  off
+	  Gain			  "1000"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain2"
+	  Position		  [160, 201, 195, 239]
+	  ShowName		  off
+	  Gain			  "1/1000000"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "Math\nFunction"
+	  Ports			  [1, 1]
+	  Position		  [340, 94, 380, 126]
+	  ShowName		  off
+	  Operator		  "log10"
+	  OutputSignalType	  "auto"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [265, 88, 300, 132]
+	  ShowName		  off
+	  Inputs		  "/*"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  MultiPortSwitch
+	  Name			  "Przelacznik\npomiaru\ntlumienia"
+	  Ports			  [3, 1]
+	  Position		  [475, 87, 505, 133]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [200, 60, 220, 80]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [165, 140, 185, 160]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Tester"
+	  Position		  [110, 202, 140, 233]
+	  Operator		  "<="
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Wybor\npomiaru"
+	  Position		  [395, 16, 445, 44]
+	  Value			  "tlumienie"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Zero"
+	  Position		  [45, 210, 75, 240]
+	  ShowName		  off
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "A out"
+	  Position		  [540, 103, 570, 117]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "P in"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Gain1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 140]
+	    DstBlock		    "Tester"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    DstBlock		    "Math\nFunction"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 40; 140, 0; 0, -25]
+	    DstBlock		    "Przelacznik\npomiaru\ntlumienia"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "Wybor\npomiaru"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 65]
+	  DstBlock		  "Przelacznik\npomiaru\ntlumienia"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Math\nFunction"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Przelacznik\npomiaru\ntlumienia"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 30]
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, -30]
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [1, 0]
+	  SrcBlock		  "Tester"
+	  SrcPort		  1
+	  DstBlock		  "Gain2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero"
+	  SrcPort		  1
+	  DstBlock		  "Tester"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Przelacznik\npomiaru\ntlumienia"
+	  SrcPort		  1
+	  DstBlock		  "A out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "P out"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [1, 0]
+	  SrcBlock		  "Gain2"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -45]
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Sum2"
+	    DstPort		    2
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      Display
+      Name		      "V1"
+      Ports		      [1]
+      Position		      [54, 460, 136, 485]
+      Orientation	      "down"
+      FontName		      "Arial"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "V2"
+      Ports		      [1]
+      Position		      [583, 460, 667, 485]
+      Orientation	      "down"
+      FontName		      "Arial"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "V3"
+      Ports		      [1]
+      Position		      [694, 460, 776, 485]
+      Orientation	      "down"
+      FontName		      "Arial"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "V4"
+      Ports		      [1]
+      Position		      [424, 460, 506, 485]
+      Orientation	      "down"
+      FontName		      "Arial"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Line {
+      SrcBlock		      "3\nSterownik\nLED/LD"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"4\nDioda\nLED/LD"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -145]
+	DstBlock		"Scope2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "1\nZrodlo\nsygnalu"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"2\nModulator"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"RMS1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -50]
+	DstBlock		"Mux"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "5\nTor\nswiatlowodowy"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"6\nOdbiornik\noptyczny"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 45; -40, 0]
+	DstBlock		"Tlumienie"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -125]
+	DstBlock		"Scope2"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "2\nModulator"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"3\nSterownik\nLED/LD"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -70]
+	DstBlock		"Scope1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "6\nOdbiornik\noptyczny"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"7\nDemodulator"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"RMS2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -60]
+	DstBlock		"Scope1"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "4\nDioda\nLED/LD"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"5\nTor\nswiatlowodowy"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 45; 40, 0]
+	DstBlock		"Tlumienie"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -135]
+	DstBlock		"Scope2"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "RMS1"
+      SrcPort		      1
+      DstBlock		      "V1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "RMS2"
+      SrcPort		      1
+      DstBlock		      "V2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "7\nDemodulator"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"RMS3"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"8\nOdbiorca\nsygnalu"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -50]
+	DstBlock		"Mux"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "RMS3"
+      SrcPort		      1
+      DstBlock		      "V3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tlumienie"
+      SrcPort		      1
+      DstBlock		      "V4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      Points		      [0, -5]
+      DstBlock		      "Scope1"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [414, 21]
+      Text		      "Model swiatlowodowego lacza analogowego z modul"
+"acja AM/FM/PM"
+      DropShadow	      on
+      FontName		      "Arial"
+      FontSize		      16
+      FontWeight	      "bold"
+    }
+  }
+}
